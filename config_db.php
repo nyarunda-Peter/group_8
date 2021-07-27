@@ -1,13 +1,12 @@
+<!-- configue a php sql database connection -->
 <?php
-// Database host
-$db_host = "localhost";
-// Database name
-$db_name = "db_name";
-// Database user
-$db_user = "db_user";
-// Database password
-$db_pass = "db_pass";
-
-// sql database connection
-$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
+$config['db_type'] = 'mysql';
+$config['db_host'] = 'localhost';
+$config['db_port'] = '3306';
+$config['db_user'] = 'root';
+$config['db_pass'] = '';
+$config['db_name'] = 'test';
+$config['db_table_prefix'] = 'php-captcha';
+$config['db_charset'] = 'utf8';
+$config['db_persistent'] = false;
 ?>
